@@ -29,9 +29,16 @@ class App
                         $local_row .= str_replace("<!--COLUMN_DATA-->", substr($data_col, 0, 50), ($table_heads ? $COLUMN_DATA : $COLUMN_HEAD));
 
                     if (!$table_heads)
+                    {
+                        $local_row = "<th>SNO</th>" .$local_row;
                         $table_heads = "<tr>{$local_row}</tr>";
+                    }
                     else
+                    {
+                        $serial_number = $row_count - 1;
+                        $local_row = "<td>$serial_number</td>".$local_row;
                         $table_data .= "<tr>{$local_row}</tr>";
+                    }
 
                     if ($row_count >= 3000)
                         break;
@@ -50,7 +57,7 @@ class App
 }
 
 $app = new App();
-$app->Run('C:\Users\anil\Desktop\PICNET\csoup_inv.txt',"\t");
+$app->Run('csoup_inv.txt',"\t");
 
 ?>
 
