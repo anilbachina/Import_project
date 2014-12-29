@@ -1,0 +1,9 @@
+changhe color in email template and URL
+
+how to change the 
+
+
+<table><tr><td style="background: #3F5673;margin-left: 7px; float: left; width: 100%;">
+<a href="http://www.flickfusion.com"><img src="http://media.flickfusion.net/videos/emails/img/ff_footer_logo.png" width="81" height="35" border="0" alt="Flick Fusion" title="Flick Fusion" style="padding: 5px;"></a>
+</td></tr></table>
+
